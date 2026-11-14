@@ -14,7 +14,9 @@ public class Creneau {
     private LocalDateTime fin;
 
     @ManyToOne
+    @JoinColumn(nullable = false)
     private Medecin medecin;
+
 
     public Creneau() {};
 
